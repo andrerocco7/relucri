@@ -1,0 +1,85 @@
+/* Variáveis Globais */
+:root {
+  --background-light: #ffffff;
+  --foreground-light: #171717;
+
+  --background-dark: #121212;
+  --foreground-dark: #e0e0e0;
+
+  --container-width: 1440px;
+  --container-padding: 20px;
+  --font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tema Claro */
+html {
+  color-scheme: light;
+  --background: var(--background-light);
+  --foreground: var(--foreground-light);
+}
+
+/* Tema Escuro */
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+    --background: var(--background-light);
+    --foreground: var(--foreground-light);
+  }
+}
+
+/* Reset Básico */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  color: var(--foreground);
+  background-color: var(--background);
+  font-family: var(--font-family);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0070f3; /* Azul suave no hover */
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Container Centralizado */
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 var(--container-padding);
+}
+
+/* Seções Gerais */
+section {
+  padding: 40px var(--container-padding);
+}
+
+/* Tema Escuro - Teste Forçado */
+@media (prefers-color-scheme: dark) {
+  body {
+    color: var(--foregrouk-light);
+    background-color: var(--background-light);
+  }
+}

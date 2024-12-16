@@ -1,0 +1,73 @@
+.header {
+  width: 100%;
+  max-width: 1440px;
+  height: 100px; // altura fixa do header
+  background-color: #f8f9fa; // cor de fundo claro, ajuste conforme necessário
+  border-bottom: 3px solid #007bff; // borda inferior azul semelhante à imagem
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+.header__logo {
+  display: flex;
+  align-items: center;
+  img {
+    width: auto;
+    height: 80px; // ajuste o tamanho do logo
+  }
+}
+
+.header__nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+
+  &List {
+    list-style: none;
+    display: flex;
+    gap: 30px; // espaçamento entre os itens do menu
+    margin: 0;
+    padding: 0;
+  }
+
+  &Item {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &Link {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+
+    &:hover {
+      color: #007bff; // azul no hover
+    }
+  }
+}
+
+.header__button {
+  background-color: #ffcc00; // amarelo
+  color: #333;
+  font-weight: 600;
+  padding: 10px 20px;
+  border: 2px solid #b8860b; // borda amarelada escura
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #ffdb4d; // amarelo mais claro no hover
+  }
+}
