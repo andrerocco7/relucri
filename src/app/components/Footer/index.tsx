@@ -12,7 +12,7 @@ const Footer = () => {
             segunda à sexta das 8h às 17h rua João Bettega Nº6545 CIC
           </p>
           <img
-            src="/relucri-logo.png"
+            src="/logo.svg"
             alt="Relucri Comercial"
             className={styles.logo}
           />
@@ -42,10 +42,10 @@ const Footer = () => {
           </ul>
           <div className={styles.socialIcons}>
             <a href="#">
-              <img src="/images/icon-instagram.png" alt="Instagram" />
+              <img src="/insta.png" alt="Instagram" />
             </a>
             <a href="#">
-              <img src="/images/icon-facebook.png" alt="Facebook" />
+              <img src="/linkedin.png" alt="Facebook" />
             </a>
           </div>
         </div>

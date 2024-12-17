@@ -1,0 +1,107 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.content {
+  max-width: 1440px;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+  img {
+    width: 200px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.logoTextBlue {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2b4fe1;
+  font-style: italic;
+}
+
+.logoTextYellow {
+  font-size: 1rem;
+  color: #ffcc4d;
+  font-weight: bold;
+  border-top: 2px solid #2b4fe1;
+  padding-top: 5px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.highlight {
+  color: #2b4fe1;
+}
+
+.description {
+  margin-bottom: 50px;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 600;
+  flex-shrink: 0;
+  text-align: justify;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.card {
+  flex: 1;
+  min-width: 180px;
+  max-width: 200px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 0.9rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card span {
+  font-size: 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+  background-color: #ffcc4d;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: #e6b800;
+  }
+}

@@ -32,8 +32,8 @@ const HorizontalSwiper = () => {
             <div className={styles.overlay}>
               <h1 className={styles.title}>Uniformes Profissionais </h1>
               <p className={styles.description}>
-                Temos orgulho de oferecer uniformes de alta qualidade para
-                empresas, escolas, times esportivos e eventos especiais.
+                ⁠Nossa satisfação é oferecer unifromes personalizados com
+                qualidade para sua empresa.
               </p>
               <button className={styles.button}>Saiba mais</button>
             </div>

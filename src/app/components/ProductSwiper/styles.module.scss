@@ -1,0 +1,78 @@
+.productSwiper {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productSwiper h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.categoryTabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.categoryTabs button {
+  font-size: 18px;
+  padding: 10px 20px;
+  background: none;
+  border: none;
+
+  margin: 0 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.categoryTabs .activeTab {
+  background-color: #ffcc4d;
+  border: none;
+  color: #000;
+}
+
+.swiperContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiperSlide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+}
+
+.swiperSlide img {
+  width: 100%;
+  height: auto;
+  max-width: 250px; /* Limitar o tamanho da imagem */
+  border-radius: 8px;
+}
+
+.productSwiper h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.productSwiper p {
+  font-size: 14px;
+  color: #777;
+}
+
+.productSwiper .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
