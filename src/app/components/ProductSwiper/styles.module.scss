@@ -6,17 +6,26 @@
   flex-direction: column;
   align-items: center;
   max-width: 1440px;
+  hr {
+    border: none;
+    border-top: 2px solid #ececec;
+    width: 100%;
+    margin-block: 20px;
+  }
 }
 
 .productSwiper h2 {
-  font-size: 24px;
-  margin-bottom: 20px;
+  font-size: 30px;
 }
 
 .categoryTabs {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin-bottom: 20px;
+  h4 {
+    font-size: 22px;
+  }
 }
 
 .categoryTabs button {
@@ -24,16 +33,16 @@
   padding: 10px 20px;
   background: none;
   border: none;
-
+  font-weight: 700;
+  color: #737373;
   margin: 0 10px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 
 .categoryTabs .activeTab {
-  background-color: #ffcc4d;
   border: none;
-  color: #000;
+  color: #4169e1;
 }
 
 .swiperContainer {

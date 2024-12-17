@@ -35,7 +35,7 @@ const DescriptionSection = () => {
       </div>
       <div className={styles.imageContainer}>
         <img
-          src="/uniforme.jpg"
+          src="/image1.png"
           alt="Uniforme Profissional"
           className={styles.image}
         />

@@ -43,9 +43,12 @@
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 45px;
   font-weight: bold;
   margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .highlight {
@@ -72,30 +75,20 @@
 }
 
 .card {
-  flex: 1;
-  min-width: 180px;
-  max-width: 200px;
   padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 8px;
+
   text-align: center;
   font-size: 0.9rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000;
+  background: rgba(217, 217, 217, 0.2);
 
   display: flex;
-  flex-direction: column; /* Organiza o conteúdo do card em coluna */
-  align-items: center; /* Centraliza os itens horizontalmente */
-
+  align-items: center;
+  gap: 20px;
   /* Garantindo que a imagem seja centralizada e com espaçamento adequado */
   img {
     width: 30px; /* Tamanho da imagem (ajustado para um tamanho menor) */
     height: auto;
-    margin-bottom: 10px; /* Espaçamento entre a imagem e o texto */
-  }
-
-  /* Ajuste para o texto */
-  p {
-    margin-top: 10px;
   }
 }
 

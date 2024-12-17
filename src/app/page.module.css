@@ -3,7 +3,6 @@
   align-items: center;
   justify-items: center;
   min-height: auto;
-  padding: 0 20px;
   gap: 48px;
   font-family: var(--font-geist-sans);
   overflow-x: hidden;
@@ -24,4 +23,22 @@
   color: #fff;
   padding: 40px 20px;
   font-family: "Montserrat", sans-serif;
+}
+
+.whatsappButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000; /* Garante que fique acima dos outros elementos */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.whatsappButton img {
+  width: 150px;
+  height: auto;
+}
+
+.whatsappButton:hover {
+  transform: scale(1.1); /* Efeito ao passar o mouse */
 }

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules"; // Importar os módulos necessários
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -32,7 +33,13 @@ const products = {
       color: "Azul",
       price: "R$50,00",
     },
-    // Adicione mais camisetas se necessário
+    {
+      id: 4,
+      image: "/camiseta1.png",
+      name: "Camiseta Amarela",
+      color: "Amarela",
+      price: "R$60,00",
+    },
   ],
   Calças: [
     {
@@ -56,7 +63,13 @@ const products = {
       color: "Cinza",
       price: "R$110,00",
     },
-    // Adicione mais calças se necessário
+    {
+      id: 4,
+      image: "/calça1.png",
+      name: "Calça de Uniforme",
+      color: "Azul",
+      price: "R$100,00",
+    },
   ],
   Moletons: [
     {
@@ -87,7 +100,6 @@ const products = {
       color: "Branco",
       price: "R$170,00",
     },
-    // Adicione mais moletons se necessário
   ],
 };
 
@@ -101,6 +113,7 @@ const ProductSwiper = () => {
   return (
     <div className={styles.productSwiper}>
       <h2>Os melhores Produtos</h2>
+      <hr />
       <div className={styles.categoryTabs}>
         <button
           className={category === "Camisetas" ? styles.activeTab : ""}
@@ -124,9 +137,12 @@ const ProductSwiper = () => {
 
       <div className={styles.swiperContainer}>
         <Swiper
+          modules={[Navigation, Pagination, Autoplay]} // Adicione os módulos
           spaceBetween={20}
           slidesPerView={3}
           navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000, disableOnInteraction: false }} // Configuração do autoplay
           loop
           className={styles.swiper}
         >

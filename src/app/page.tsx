@@ -19,6 +19,14 @@ export default function Home() {
       <ProductSwiper />
       <Contato />
       <Footer />
+      <a
+        href="https://api.whatsapp.com/send?phone=5541991048448"
+        target="_blank"
+        rel="noopener noreferrer"
+        className={styles.whatsappButton}
+      >
+        <img src="/whatsapp-icon.png" alt="WhatsApp" />
+      </a>
     </div>
   );
 }

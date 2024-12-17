@@ -12,15 +12,10 @@ const Footer = () => {
             segunda à sexta das 8h às 17h rua João Bettega Nº6545 CIC
           </p>
           <img
-            src="/logo.svg"
+            src="/image.png"
             alt="Relucri Comercial"
             className={styles.logo}
           />
-        </div>
-
-        {/* Coluna 2 - Botão Contato */}
-        <div className={styles.column}>
-          <button className={styles.contactButton}>Contato</button>
         </div>
 
         {/* Coluna 3 - Informações de Contato */}
@@ -28,13 +23,15 @@ const Footer = () => {
           <h3 className={styles.title}>Contato</h3>
           <ul className={styles.contactList}>
             <li>
-              <span>📞</span> <a href="tel:+554132391794">(41) 3239-1794</a>
+              <img src="/phone.svg" alt="" />
+              <a href="tel:+554132391794">(41) 3239-1794</a>
             </li>
             <li>
-              <span>📱</span> <a href="tel:+554199549939">(41) 99549-9939</a>
+              <img src="/whats.svg" alt="" />
+              <a href="tel:+554199549939">(41) 99549-9939</a>
             </li>
             <li>
-              <span>✉️</span>{" "}
+              <img src="/mail.svg" alt="" />
               <a href="mailto:contato@relucriuniformes.com">
                 relucricomercial@gmail.com
               </a>

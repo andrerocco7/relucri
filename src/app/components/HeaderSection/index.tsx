@@ -7,7 +7,7 @@ const HeaderSection = () => {
       <div className={styles.header__container}>
         <div className={styles.header__logo}>
           <a href="#">
-            <img src="/relucri-logo.svg" alt="Relucri logo" />
+            <img src="/image.png" alt="Relucri logo" />
           </a>
         </div>
         <nav className={styles.header__nav}>
