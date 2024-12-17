@@ -27,19 +27,19 @@ const ServiceSection = () => {
 
         <div className={styles.services}>
           <a href="/atendimento-personalizado" className={styles.card}>
-            <span>🧑‍💼</span>
+            <img src="/people.svg" alt=""></img>
             <p>Atendimento Personalizado</p>
           </a>
           <a href="/entrega-garantida" className={styles.card}>
-            <span>🚚</span>
+            <img src="/truck.svg" alt=""></img>
             <p>Entrega Garantida</p>
           </a>
           <a href="/orcamento-online" className={styles.card}>
-            <span>📄</span>
+            <img src="/mouse.png" alt=""></img>
             <p>Faça seu Orçamento Online</p>
           </a>
           <a href="/experiencia-automacao" className={styles.card}>
-            <span>🏆</span>
+            <img src="/trophy.svg" alt=""></img>
             <p>Experiência </p>
           </a>
         </div>

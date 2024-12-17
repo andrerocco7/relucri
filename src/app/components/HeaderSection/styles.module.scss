@@ -1,12 +1,13 @@
 .header {
   width: 100%;
-  max-width: 1440px;
+
   height: 100px; // altura fixa do header
   background-color: #f8f9fa; // cor de fundo claro, ajuste conforme necessário
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .header__container {
@@ -14,7 +15,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0 40px;
+  padding: 0 20px;
   box-sizing: border-box;
 }
 

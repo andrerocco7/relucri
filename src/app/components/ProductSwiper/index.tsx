@@ -1,12 +1,95 @@
 "use client";
 
 import React, { useState } from "react";
-import { Swiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import styles from "./styles.module.scss";
+
+// Dados para cada categoria
+const products = {
+  Camisetas: [
+    {
+      id: 1,
+      image: "/camiseta1.png",
+      name: "Camiseta Amarela",
+      color: "Amarela",
+      price: "R$60,00",
+    },
+    {
+      id: 2,
+      image: "/camiseta3.png",
+      name: "Camiseta Vermelha",
+      color: "Vermelha",
+      price: "R$55,00",
+    },
+    {
+      id: 3,
+      image: "/camiseta2.png",
+      name: "Camiseta Azul",
+      color: "Azul",
+      price: "R$50,00",
+    },
+    // Adicione mais camisetas se necessário
+  ],
+  Calças: [
+    {
+      id: 1,
+      image: "/calça1.png",
+      name: "Calça de Uniforme",
+      color: "Azul",
+      price: "R$100,00",
+    },
+    {
+      id: 2,
+      image: "/calça2.png",
+      name: "Calça Jeans",
+      color: "Preta",
+      price: "R$120,00",
+    },
+    {
+      id: 3,
+      image: "/calça3.png",
+      name: "Calça Moletom",
+      color: "Cinza",
+      price: "R$110,00",
+    },
+    // Adicione mais calças se necessário
+  ],
+  Moletons: [
+    {
+      id: 1,
+      image: "/moletom1.png",
+      name: "Moletom Empresas",
+      color: "Azul",
+      price: "R$150,00",
+    },
+    {
+      id: 2,
+      image: "/moletom1.png",
+      name: "Moletom Casual",
+      color: "Preto",
+      price: "R$160,00",
+    },
+    {
+      id: 3,
+      image: "/moletom1.png",
+      name: "Moletom Conforto",
+      color: "Cinza",
+      price: "R$155,00",
+    },
+    {
+      id: 4,
+      image: "/moletom1.png",
+      name: "Moletom Estampado",
+      color: "Branco",
+      price: "R$170,00",
+    },
+    // Adicione mais moletons se necessário
+  ],
+};
 
 const ProductSwiper = () => {
   const [category, setCategory] = useState("Camisetas");
@@ -47,39 +130,16 @@ const ProductSwiper = () => {
           loop
           className={styles.swiper}
         >
-          {category === "Camisetas" && (
-            <>
+          {products[category].map((product) => (
+            <SwiperSlide key={product.id}>
               <div className={styles.swiperSlide}>
-                <img src="/camiseta1.png" alt="Camiseta 1" />
-                <h3>Camisa Amarela de proteção</h3>
-                <p>Amarela</p>
-                <p className={styles.price}>R$60,00</p>
+                <img src={product.image} alt={product.name} />
+                <h3>{product.name}</h3>
+                <p>{product.color}</p>
+                <p className={styles.price}>{product.price}</p>
               </div>
-              {/* Adicionar mais itens para Camisetas */}
-            </>
-          )}
-          {category === "Calças" && (
-            <>
-              <div className={styles.swiperSlide}>
-                <img src="/calça1.png" alt="Calça 1" />
-                <h3>Calça de Uniforme </h3>
-                <p>Azul</p>
-                <p className={styles.price}>R$100.00</p>
-              </div>
-              {/* Adicionar mais itens para Calças */}
-            </>
-          )}
-          {category === "Moletons" && (
-            <>
-              <div className={styles.swiperSlide}>
-                <img src="/moletom1.png" alt="Moletom 1" />
-                <h3>Moletom Empresas</h3>
-                <p>Azul</p>
-                <p className={styles.price}>R$150.00</p>
-              </div>
-              {/* Adicionar mais itens para Moletons */}
-            </>
-          )}
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>

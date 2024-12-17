@@ -37,7 +37,7 @@ html {
 html,
 body {
   width: 100%;
-  max-width: 1440px;
+  max-width: 100%; /* Remover a restrição de 1440px */
   margin: 0 auto;
   color: var(--foreground);
   background-color: var(--background);
@@ -64,9 +64,10 @@ img {
 }
 
 /* Container Centralizado */
+/* Container Centralizado */
 .container {
-  width: 100%;
-  max-width: 1440px;
+  width: 100%; /* Ocupa toda a largura da tela */
+  max-width: 100%; /* Removido a restrição de 1440px */
   margin: 0 auto;
   padding: 0 var(--container-padding);
 }

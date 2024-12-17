@@ -1,6 +1,5 @@
 .page {
   width: 100%;
-  max-width: 1440px;
   align-items: center;
   justify-items: center;
   min-height: auto;
@@ -9,6 +8,7 @@
   font-family: var(--font-geist-sans);
   overflow-x: hidden;
   scrollbar-width: none;
+  margin: 0 auto;
 }
 
 .main {
@@ -17,6 +17,11 @@
   gap: 32px;
   grid-row-start: 2;
 }
+
 .footer {
-  width: 1900px;
+  width: 100%; /* Garante que o footer ocupe toda a largura disponível */
+  background-color: #000;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: "Montserrat", sans-serif;
 }
