@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import styles from "./styles.module.scss";
 
 const ServiceSection = () => {
@@ -26,22 +27,22 @@ const ServiceSection = () => {
         </p>
 
         <div className={styles.services}>
-          <a href="/atendimento-personalizado" className={styles.card}>
+          <Link href="/atendimento-personalizado" className={styles.card}>
             <img src="/people.svg" alt=""></img>
             <p>Atendimento Personalizado</p>
-          </a>
-          <a href="/entrega-garantida" className={styles.card}>
+          </Link>
+          <Link href="/entrega-garantida" className={styles.card}>
             <img src="/truck.svg" alt=""></img>
             <p>Entrega Garantida</p>
-          </a>
-          <a href="/orcamento-online" className={styles.card}>
+          </Link>
+          <Link href="/orcamento-online" className={styles.card}>
             <img src="/mouse.png" alt=""></img>
             <p>Orçamento Online</p>
-          </a>
-          <a href="/experiencia-automacao" className={styles.card}>
+          </Link>
+          <Link href="/experiencia-automacao" className={styles.card}>
             <img src="/trophy.svg" alt=""></img>
             <p>Experiência e Automação</p>
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -7,6 +7,7 @@ import ProductSection from "./components/ProductSection";
 import styles from "./page.module.css";
 import ServiceSection from "./components/ServiceSection";
 import ProductSwiper from "./components/ProductSwiper";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -19,14 +20,14 @@ export default function Home() {
       <ProductSwiper />
       <Contato />
       <Footer />
-      <a
+      <Link
         href="https://api.whatsapp.com/send?phone=5541991048448"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.whatsappButton}
       >
         <img src="/whatsapp-icon.png" alt="WhatsApp" />
-      </a>
+      </Link>
     </div>
   );
 }

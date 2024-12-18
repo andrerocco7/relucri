@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import styles from "./styles.module.scss";
 
 const DescriptionSection = () => {
@@ -27,9 +28,9 @@ const DescriptionSection = () => {
           com o logotipo da sua empresa em bordado, sublimação ou silk-screen.
           Se você precisa de uniformes para a sua empresa em{" "}
           <span className={styles.bold}>Curitiba e Região</span>,{" "}
-          <a href="#" className={styles.link}>
+          <Link href="#" className={styles.link}>
             entre em contato conosco
-          </a>{" "}
+          </Link>{" "}
           e realize um orçamento!
         </p>
       </div>

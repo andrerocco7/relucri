@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import styles from "./styles.module.scss";
+import Link from "next/link";
 
 const HeaderSection = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
@@ -11,9 +12,9 @@ const HeaderSection = () => {
     <header className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.header__logo}>
-          <a href="#">
+          <Link href="#">
             <img src="/image.png" alt="Relucri logo" />
-          </a>
+          </Link>
         </div>
         <button
           className={`${styles.header__hamburger} ${
@@ -32,36 +33,36 @@ const HeaderSection = () => {
         >
           <ul className={styles.header__navList}>
             <li className={styles.header__navItem}>
-              <a href="#" className={styles.header__navLink}>
+              <Link href="#" className={styles.header__navLink}>
                 Início
-              </a>
+              </Link>
             </li>
             <li className={styles.header__navItem}>
-              <a href="/" className={styles.header__navLink}>
+              <Link href="/" className={styles.header__navLink}>
                 Quem Somos
-              </a>
+              </Link>
             </li>
             <li className={styles.header__navItem}>
-              <a href="/" className={styles.header__navLink}>
+              <Link href="/" className={styles.header__navLink}>
                 Produtos
-              </a>
+              </Link>
             </li>
             <li className={styles.header__navItem}>
-              <a
+              <Link
                 href="https://api.whatsapp.com/send?phone=5541991048448"
                 className={styles.header__navLink}
               >
                 Contato
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
-        <a
+        <Link
           href="https://api.whatsapp.com/send?phone=5541991048448"
           className={styles.header__button}
         >
           Fale Conosco
-        </a>
+        </Link>
       </div>
     </header>
   );

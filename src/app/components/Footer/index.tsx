@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import styles from "./styles.module.scss";
 
 const Footer = () => {
@@ -24,28 +25,28 @@ const Footer = () => {
           <ul className={styles.contactList}>
             <li>
               <img src="/phone.svg" alt="" />
-              <a href="tel:+554132391794">(41) 3239-1794</a>
+              <Link href="tel:+554132391794">(41) 3239-1794</Link>
             </li>
             <li>
               <img src="/whats.svg" alt="" />
-              <a href="https://api.whatsapp.com/send?phone=5541991048448">
+              <Link href="https://api.whatsapp.com/send?phone=5541991048448">
                 (41) 99549-9939
-              </a>
+              </Link>
             </li>
             <li>
               <img src="/mail.svg" alt="" />
-              <a href="mailto:contato@relucriuniformes.com">
+              <Link href="mailto:contato@relucriuniformes.com">
                 relucricomercial@gmail.com
-              </a>
+              </Link>
             </li>
           </ul>
           <div className={styles.socialIcons}>
-            <a href="#">
+            <Link href="#">
               <img src="/insta.png" alt="Instagram" />
-            </a>
-            <a href="#">
+            </Link>
+            <Link href="#">
               <img src="/linkedin.png" alt="Facebook" />
-            </a>
+            </Link>
           </div>
         </div>
       </div>
