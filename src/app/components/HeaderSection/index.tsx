@@ -49,7 +49,7 @@ const HeaderSection = () => {
             </li>
             <li className={styles.header__navItem}>
               <Link
-                href="https://api.whatsapp.com/send?phone=5541991048448"
+                href="https://wa.me/41995419939?text=Gostaria%20de%20solicitar%20uniformes%20para%20minha%20empresa!"
                 className={styles.header__navLink}
               >
                 Contato
@@ -58,7 +58,7 @@ const HeaderSection = () => {
           </ul>
         </nav>
         <Link
-          href="https://api.whatsapp.com/send?phone=5541991048448"
+          href="https://wa.me/41995419939?text=Gostaria%20de%20solicitar%20uniformes%20para%20minha%20empresa!"
           className={styles.header__button}
         >
           Fale Conosco

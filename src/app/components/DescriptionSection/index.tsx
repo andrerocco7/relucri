@@ -24,7 +24,10 @@ const DescriptionSection = () => {
           com o logotipo da sua empresa em bordado, sublimação ou silk-screen.
           Se você precisa de uniformes para a sua empresa em
           <span className={styles.bold}>Curitiba e Região</span>,
-          <Link href="#" className={styles.link}>
+          <Link
+            href="https://wa.me/41995419939?text=Gostaria%20de%20solicitar%20uniformes%20para%20minha%20empresa!"
+            className={styles.link}
+          >
             entre em contato conosco
           </Link>
           e realize um orçamento!

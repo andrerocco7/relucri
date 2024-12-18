@@ -47,6 +47,7 @@
     .bold {
       font-weight: bold;
       color: #333;
+      padding-inline: 3px;
     }
   }
 
@@ -54,6 +55,7 @@
     color: #f7b92a;
     text-decoration: underline;
     font-weight: 600;
+    padding-inline: 3px;
 
     &:hover {
       color: #e5a11d;

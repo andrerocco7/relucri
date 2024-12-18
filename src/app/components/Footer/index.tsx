@@ -8,10 +8,16 @@ const Footer = () => {
       <div className={styles.container}>
         {/* Coluna 1 - Horário de Atendimento */}
         <div className={styles.column}>
-          <h3 className={styles.title}>Horário de Atendimento</h3>
-          <p className={styles.text}>
-            segunda à sexta das 8h às 17h rua João Bettega Nº6545 CIC
-          </p>
+          <div className={styles.icon}>
+            <img src="/calendar.svg" alt="" />
+            <h3 className={styles.title}> Segunda à Sexta das 8h às 17h</h3>
+          </div>
+          <div className={styles.icon}>
+            <img src="/pin.svg" alt="" />
+            <p className={styles.text}>
+              R. Alfredo Pujol, 263 - Cidade Industrial de Curitiba
+            </p>
+          </div>
           <img
             src="/image.png"
             alt="Relucri Comercial"
@@ -25,11 +31,13 @@ const Footer = () => {
           <ul className={styles.contactList}>
             <li>
               <img src="/phone.svg" alt="" />
-              <Link href="tel:+554132391794">(41) 3239-1794</Link>
+              <Link href="https://wa.me/41995419939?text=Gostaria%20de%20solicitar%20uniformes%20para%20minha%20empresa!">
+                (41) 99541-9939
+              </Link>
             </li>
             <li>
               <img src="/whats.svg" alt="" />
-              <Link href="https://api.whatsapp.com/send?phone=5541991048448">
+              <Link href="https://wa.me/41995419939?text=Gostaria%20de%20solicitar%20uniformes%20para%20minha%20empresa!">
                 (41) 99541-9939
               </Link>
             </li>
@@ -39,15 +47,19 @@ const Footer = () => {
                 relucricomercial@gmail.com
               </Link>
             </li>
+            <li>
+              <img src="/inste2.svg" alt="Instagram" />
+              <Link href="https://www.instagram.com/relucriuniformes?igsh=MTg0MnM5eHhlajJzZg==">
+                @relucriuniformes
+              </Link>
+            </li>
+            <li>
+              <img src="/linkedin.svg" alt="Facebook" />
+              <Link href="https://www.linkedin.com/in/relucri-comercial-uniformes-profissionais-7610571b6/">
+                RELUCRI COMERCIAL UNIFORMES PROFISSIONAIS
+              </Link>
+            </li>
           </ul>
-          <div className={styles.socialIcons}>
-            <Link href="#">
-              <img src="/insta.png" alt="Instagram" />
-            </Link>
-            <Link href="#">
-              <img src="/linkedin.png" alt="Facebook" />
-            </Link>
-          </div>
         </div>
       </div>
 
