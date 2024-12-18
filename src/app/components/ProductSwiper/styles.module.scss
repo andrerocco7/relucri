@@ -6,6 +6,9 @@
   flex-direction: column;
   align-items: center;
   max-width: 1440px;
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+  }
   hr {
     border: none;
     border-top: 2px solid #ececec;
@@ -16,6 +19,9 @@
 
 .productSwiper h2 {
   font-size: 30px;
+  @media screen and (max-width: 768px) {
+    font-size: 24px;
+  }
 }
 
 .categoryTabs {
@@ -25,6 +31,9 @@
   margin-bottom: 20px;
   h4 {
     font-size: 22px;
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -67,22 +76,31 @@
 .swiperSlide img {
   width: 100%;
   height: auto;
-  max-width: 250px; /* Limitar o tamanho da imagem */
+  max-width: 250px;
   border-radius: 8px;
 }
 
 .productSwiper h3 {
   font-size: 18px;
   margin: 10px 0;
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 .productSwiper p {
   font-size: 14px;
   color: #777;
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .productSwiper .price {
   font-size: 16px;
   font-weight: bold;
   color: #000;
+  @media screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 }

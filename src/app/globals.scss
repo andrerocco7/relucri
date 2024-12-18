@@ -80,6 +80,22 @@ section {
   }
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+  color: #2b4fe1 !important;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
+.swiper-button-next {
+  right: 0 !important;
+}
+
+.swiper-button-prev {
+  left: 0 !important;
+}
+
 /* Tema Escuro - Teste Forçado */
 @media (prefers-color-scheme: dark) {
   body {
