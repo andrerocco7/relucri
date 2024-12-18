@@ -10,6 +10,9 @@
     font-weight: bold;
     margin-bottom: 10px;
     color: #000;
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+    }
 
     .highlight {
       color: #f7b92a;
@@ -38,19 +41,24 @@
     font-size: 16px;
     color: #555;
     margin-bottom: 40px;
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+    }
   }
 
   .productList {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
   }
 
   .productCard {
-    flex: 1 1 calc(14% - 20px);
     max-width: 200px;
     text-align: center;
+    @media screen and (max-width: 768px) {
+      max-width: 150px;
+    }
 
     .productImage {
       width: 100%;

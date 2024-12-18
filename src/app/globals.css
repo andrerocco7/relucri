@@ -75,6 +75,9 @@ img {
 /* Seções Gerais */
 section {
   padding: 40px var(--container-padding);
+  @media screen and (max-width: 768px) {
+    padding: 0px;
+  }
 }
 
 /* Tema Escuro - Teste Forçado */
