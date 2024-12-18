@@ -40,7 +40,7 @@ const ServiceSection = () => {
             <p>Orçamento Online</p>
           </Link>
           <Link href="/experiencia-automacao" className={styles.card}>
-            <img src="/trophy.svg" alt=""></img>
+            <img src="/Trophy.svg" alt=""></img>
             <p>Experiência e Automação</p>
           </Link>
         </div>
