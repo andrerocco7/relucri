@@ -28,7 +28,9 @@ const Footer = () => {
             </li>
             <li>
               <img src="/whats.svg" alt="" />
-              <a href="tel:+554199549939">(41) 99549-9939</a>
+              <a href="https://api.whatsapp.com/send?phone=5541991048448">
+                (41) 99549-9939
+              </a>
             </li>
             <li>
               <img src="/mail.svg" alt="" />
