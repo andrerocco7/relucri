@@ -120,7 +120,6 @@ const products: Products = {
 };
 
 const ProductSwiper = () => {
-  // Restrinja o estado para usar apenas as chaves de `products`
   const [category, setCategory] = useState<keyof Products>("Camisetas");
 
   const handleCategoryChange = (category: keyof Products) => {
@@ -129,7 +128,7 @@ const ProductSwiper = () => {
 
   return (
     <div className={styles.productSwiper}>
-      <h2>Os melhores Produtos</h2>
+      <h2>Os Produtos</h2>
       <hr />
       <div className={styles.categoryTabs}>
         <button
@@ -169,7 +168,6 @@ const ProductSwiper = () => {
                 <img src={product.image} alt={product.name} />
                 <h3>{product.name}</h3>
                 <p>{product.color}</p>
-                <p className={styles.price}>{product.price}</p>
               </div>
             </SwiperSlide>
           ))}

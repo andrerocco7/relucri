@@ -30,7 +30,7 @@ const Footer = () => {
             <li>
               <img src="/whats.svg" alt="" />
               <Link href="https://api.whatsapp.com/send?phone=5541991048448">
-                (41) 99549-9939
+                (41) 99541-9939
               </Link>
             </li>
             <li>
@@ -51,11 +51,10 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Direitos Reservados */}
       <div className={styles.footerBottom}>
         <p>
-          Direitos Reservados a{" "}
-          <span className={styles.highlight}>Relucri Commercial</span>
+          Direitos Reservados a
+          <span className={styles.highlight}>Relucri Comercial</span>
         </p>
       </div>
     </footer>

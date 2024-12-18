@@ -12,25 +12,21 @@ const DescriptionSection = () => {
           empresas!
         </p>
         <p className={styles.description}>
-          Contamos com uma{" "}
+          Contamos com uma
           <span className={styles.bold}>equipe competente</span> e com
           maquinário
           <span className={styles.bold}> próprio</span>, pois acreditamos que
           profissionais uniformizados e protegidos reforçam a imagem de
           confiabilidade, organização, segurança e higiene de uma empresa.
-          Contamos também com produtos de altíssima qualidade, além de tecidos
-          certificados pelo padrão <span className={styles.bold}>ISO</span> e
-          EPIs certificados pelo
-          <span className={styles.bold}> INMETRO</span>.
         </p>
         <p className={styles.description}>
           Confeccionamos qualquer tipo de uniforme profissional, personalizados
           com o logotipo da sua empresa em bordado, sublimação ou silk-screen.
-          Se você precisa de uniformes para a sua empresa em{" "}
-          <span className={styles.bold}>Curitiba e Região</span>,{" "}
+          Se você precisa de uniformes para a sua empresa em
+          <span className={styles.bold}>Curitiba e Região</span>,
           <Link href="#" className={styles.link}>
             entre em contato conosco
-          </Link>{" "}
+          </Link>
           e realize um orçamento!
         </p>
       </div>

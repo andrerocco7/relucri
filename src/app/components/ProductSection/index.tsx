@@ -5,13 +5,13 @@ const ProductSection = () => {
   return (
     <section className={styles.productSection}>
       <h2 className={styles.title}>
-        UNIFORMES PROFISSIONAIS DE{" "}
+        UNIFORMES PROFISSIONAIS DE
         <span className={styles.highlight}>ALTO PADRÃO</span>
       </h2>
       <p className={styles.description}>
-        A BRICS trabalha na confecção de uniformes com excelente qualidade, tudo
-        para que você e seus funcionários tenham conforto e segurança dentro da
-        sua empresa.
+        A Relucri trabalha na confecção de uniformes com excelente qualidade,
+        tudo para que você e seus funcionários tenham conforto e segurança
+        dentro da sua empresa.
       </p>
 
       <div className={styles.productList}>
@@ -24,9 +24,7 @@ const ProductSection = () => {
           />
           <h3 className={styles.productName}>Uniforme</h3>
           <p className={styles.productGender}>Mulher</p>
-          <p className={styles.productPrice}>
-            <span>R$16.48</span>{" "}
-          </p>
+          <p className={styles.productPrice}></p>
         </div>
 
         {/* Produto 2 */}
@@ -38,9 +36,7 @@ const ProductSection = () => {
           />
           <h3 className={styles.productName}>Uniforme</h3>
           <p className={styles.productGender}>Homem</p>
-          <p className={styles.productPrice}>
-            <span>R$16.48</span>{" "}
-          </p>
+          <p className={styles.productPrice}></p>
         </div>
 
         {/* Produto 3 */}
@@ -52,9 +48,7 @@ const ProductSection = () => {
           />
           <h3 className={styles.productName}>Uniforme</h3>
           <p className={styles.productGender}>Homem</p>
-          <p className={styles.productPrice}>
-            <span>R$16.48</span>{" "}
-          </p>
+          <p className={styles.productPrice}></p>
         </div>
 
         {/* Produto 4 */}
@@ -66,9 +60,7 @@ const ProductSection = () => {
           />
           <h3 className={styles.productName}>Uniforme</h3>
           <p className={styles.productGender}>Mulher</p>
-          <p className={styles.productPrice}>
-            <span>R$16.48</span>{" "}
-          </p>
+          <p className={styles.productPrice}></p>
         </div>
 
         {/* Produto 5 */}
@@ -80,9 +72,7 @@ const ProductSection = () => {
           />
           <h3 className={styles.productName}>Uniforme</h3>
           <p className={styles.productGender}>Homem</p>
-          <p className={styles.productPrice}>
-            <span>R$16.48</span>{" "}
-          </p>
+          <p className={styles.productPrice}></p>
         </div>
 
         {/* Produto 6 */}
@@ -94,9 +84,7 @@ const ProductSection = () => {
           />
           <h3 className={styles.productName}>Uniforme</h3>
           <p className={styles.productGender}>Homem</p>
-          <p className={styles.productPrice}>
-            <span>R$16.48</span>{" "}
-          </p>
+          <p className={styles.productPrice}></p>
         </div>
         <div className={styles.button}>
           <button className={styles.button}>Ver todos os produtos</button>
