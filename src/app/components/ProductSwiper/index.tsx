@@ -2,15 +2,31 @@
 
 import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, Autoplay } from "swiper/modules"; // Importar os módulos necessários
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import styles from "./styles.module.scss";
 
+// Definir o tipo para cada produto
+type Product = {
+  id: number;
+  image: string;
+  name: string;
+  color: string;
+  price: string;
+};
+
+// Definir o tipo para o objeto de produtos
+type Products = {
+  Camisetas: Product[];
+  Calças: Product[];
+  Moletons: Product[];
+};
+
 // Dados para cada categoria
-const products = {
+const products: Products = {
   Camisetas: [
     {
       id: 1,
@@ -104,9 +120,10 @@ const products = {
 };
 
 const ProductSwiper = () => {
-  const [category, setCategory] = useState("Camisetas");
+  // Restrinja o estado para usar apenas as chaves de `products`
+  const [category, setCategory] = useState<keyof Products>("Camisetas");
 
-  const handleCategoryChange = (category: string) => {
+  const handleCategoryChange = (category: keyof Products) => {
     setCategory(category);
   };
 
@@ -137,12 +154,12 @@ const ProductSwiper = () => {
 
       <div className={styles.swiperContainer}>
         <Swiper
-          modules={[Navigation, Pagination, Autoplay]} // Adicione os módulos
+          modules={[Navigation, Pagination, Autoplay]}
           spaceBetween={20}
           slidesPerView={3}
           navigation
           pagination={{ clickable: true }}
-          autoplay={{ delay: 3000, disableOnInteraction: false }} // Configuração do autoplay
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           loop
           className={styles.swiper}
         >
