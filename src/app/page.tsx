@@ -21,7 +21,7 @@ export default function Home() {
       <Contato />
       <Footer />
       <Link
-        href="https://api.whatsapp.com/send?phone=5541991048448"
+        href="https://wa.me/41995419939?text=Gostaria%20de%20solicitar%20uniformes%20para%20minha%20empresa!"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.whatsappButton}
