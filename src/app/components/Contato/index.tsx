@@ -36,8 +36,6 @@ const Contato = () => {
       } else {
         toast.error("Erro ao enviar informações");
       }
-    } catch (error) {
-      toast.error("Erro ao enviar informações");
     } finally {
       setLoading(false);
     }
