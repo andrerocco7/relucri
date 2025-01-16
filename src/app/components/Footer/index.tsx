@@ -66,7 +66,7 @@ const Footer = () => {
       <div className={styles.footerBottom}>
         <p>
           Direitos Reservados a
-          <span className={styles.highlight}>Relucri Comercial</span>
+          <span className={styles.highlight}>Relucri Comercial Ltda.</span>
         </p>
       </div>
     </footer>

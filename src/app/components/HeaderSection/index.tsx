@@ -48,10 +48,7 @@ const HeaderSection = () => {
               </Link>
             </li>
             <li className={styles.header__navItem}>
-              <Link
-                href="https://wa.me/41995419939?text=Gostaria%20de%20solicitar%20uniformes%20para%20minha%20empresa!"
-                className={styles.header__navLink}
-              >
+              <Link href="#contato" className={styles.header__navLink}>
                 Contato
               </Link>
             </li>

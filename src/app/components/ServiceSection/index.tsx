@@ -28,7 +28,7 @@ const ServiceSection = () => {
 
         <div className={styles.services}>
           <Link
-            href="/https://wa.me/41995419939?text=Gostaria%20de%20solicitar%20uniformes%20para%20minha%20empresa!"
+            href="https://wa.me/41995419939?text=Gostaria%20de%20solicitar%20uniformes%20para%20minha%20empresa!"
             className={styles.card}
           >
             <img src="/people.svg" alt=""></img>
@@ -36,10 +36,10 @@ const ServiceSection = () => {
           </Link>
           <div className={styles.card}>
             <img src="/truck.svg" alt=""></img>
-            <p>Entrega Garantida</p>
+            <p>Entrega em Todo Território Brasileiro</p>
           </div>
           <Link
-            href="/https://wa.me/41995419939?text=Gostaria%20de%20solicitar%20uniformes%20para%20minha%20empresa!"
+            href="https://wa.me/41995419939?text=Gostaria%20de%20solicitar%20uniformes%20para%20minha%20empresa!"
             className={styles.card}
           >
             <img src="/mouse.png" alt=""></img>
@@ -47,7 +47,7 @@ const ServiceSection = () => {
           </Link>
           <div className={styles.card}>
             <img src="/Trophy.svg" alt=""></img>
-            <p>Experiência e Automação</p>
+            <p>Experiência e Qualidade</p>
           </div>
         </div>
       </div>

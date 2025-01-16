@@ -6,7 +6,7 @@ const ProductSection = () => {
     <section className={styles.productSection}>
       <h2 className={styles.title}>
         UNIFORMES PROFISSIONAIS DE
-        <span className={styles.highlight}>ALTO PADRÃO</span>
+        <span className={styles.highlight}>QUALIDADE</span>
       </h2>
       <p className={styles.description}>
         A Relucri trabalha na confecção de uniformes com excelente qualidade,

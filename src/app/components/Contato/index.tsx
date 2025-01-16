@@ -41,7 +41,7 @@ const Contato = () => {
     }
   };
   return (
-    <section className={styles.container}>
+    <section id="contato" className={styles.container}>
       <ToastContainer />
       <div className={styles.formWrapper}>
         <h2 className={styles.title}>Contato</h2>
