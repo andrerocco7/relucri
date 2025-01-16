@@ -38,12 +38,12 @@ const HeaderSection = () => {
               </Link>
             </li>
             <li className={styles.header__navItem}>
-              <Link href="/" className={styles.header__navLink}>
+              <Link href="/quemsomos" className={styles.header__navLink}>
                 Quem Somos
               </Link>
             </li>
             <li className={styles.header__navItem}>
-              <Link href="/" className={styles.header__navLink}>
+              <Link href="/productpage" className={styles.header__navLink}>
                 Produtos
               </Link>
             </li>
